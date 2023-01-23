@@ -26,9 +26,10 @@ function App() {
       </div>
 
       {/* Here goes the About section */}
-      <div className="bg-emerald-300 flexCenter">
+      <div className="bg-emerald-400 flexCenter">
         <div className="boxWidth">
-          <About />
+          <About language={language} setLanguage={setLanguage}
+          />
         </div>
       </div>
       
