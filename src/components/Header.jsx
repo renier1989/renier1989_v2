@@ -6,7 +6,7 @@ function Header(props) {
   const [toggle, setToggle] = useState(false);
   
   return (
-    <nav  className="w-full flex py-6 justify-between items-center navbar">
+    <nav  className="bg-emerald-300 fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkMode darkText  z-50 " >
       <img src={react} alt="logo" />
 
       {/* esto es para el navbar de la version de escritorio  */}

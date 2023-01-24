@@ -5,11 +5,11 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function About(props) {
   return (
-    <section id="about" className="flex md:flex-row flex-col py-10">
+    <section id="about" className="flex md:flex-row flex-col py-20">
 
       {/* Here will go the image section */}
       <div className="md:order-2 flex-1 justify-center basis-3/12 flexCenter">
-        <div className="relative z-0">
+        <div className="">
           <img src={renier} alt="profile" className="w-[400px] h-[400px] hover:filter hover:saturate-150 transition duration-500 z-10" />
         </div>
       </div>
