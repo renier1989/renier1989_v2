@@ -7,6 +7,9 @@ import linkedin from './linkedin.svg'
 import github from './github.svg'
 import instagram from './instagram.svg'
 import download from './download.svg'
+import sun from './sun.svg'
+import moon from './moon.svg'
+
 // iconos de logos
 import javascript from './javascript.png'
 import bootstrap from './bootstrap.png'
@@ -28,6 +31,8 @@ export {
     github,
     instagram,
     download,
+    sun,
+    moon,
     javascript,
     bootstrap,
     laravel,

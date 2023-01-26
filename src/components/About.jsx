@@ -10,7 +10,7 @@ function About(props) {
       {/* Here will go the image section */}
       <div className="md:order-2 flex-1 justify-center basis-3/12 flexCenter">
         <div className="">
-          <img src={renier} alt="profile" className="w-[400px] h-[400px] hover:filter hover:saturate-150 transition duration-500 z-10" />
+          <img src={renier} alt="profile" className="md:w-[400px] md:h-[400px] hover:filter hover:saturate-150 transition duration-500 z-10" />
         </div>
       </div>
 
@@ -30,7 +30,7 @@ function About(props) {
             Renier Vargas
           </p>
 
-          <p className="text-sm font-medium text-white">
+          <p className="text-sm font-medium paragraph">
             {props.language ? aboutInfo.infoEs : aboutInfo.infoEn}
           </p>
         </motion.div>

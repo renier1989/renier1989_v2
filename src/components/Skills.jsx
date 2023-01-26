@@ -2,24 +2,35 @@ import {motion} from 'framer-motion'
 import SkillCard from "./SkillCard"
 import { skills } from "../constants"
 
-function Skills() {
+function Skills({language}) {
   return (
     <section id="skills" className="flex flex-col py-20">
       {/* Here goes part of the title SKILLS and some texte */}
-      <div className='flex-1 px-6 sm:px-16 flexCenter md:items-start md:text-start md:flex-row flex-col'>
-        <h1 className='heading2 '>
-          My Skills
+      <div className='flex-1 px-6 sm:px-16 flexCenter md:items-start md:text-start md:flex-row flex-col mb-5'>
+        <h1 className={`heading2`}>
+          {language ? (
+            <p>Habilidades</p>
+            ):(
+            <p>My Skills</p>
+          )}
         </h1>
         <div className="w-full md:mt-0 mt-6 ">
         <p className='paragraph  md:max-w-[450px] max-w-md mx-auto'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam rem pariatur incidunt, ab dolores doloribus qui?
+        {language ? (
+            <p >ESPAÑOL Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, tempore.</p>
+            ):(
+            <p >ENGLISH Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, deleniti modi.</p>
+          )}
+
+          
         </p>
         </div>
       </div>
       {/* Here goes the cards for de skills */}
-      <div className="grid md:grid-cols-4 md:justify-center flex-col md:gap-12 marginX">
+      <div className="grid md:grid-cols-4 md:justify-center flex-col md:gap-2 marginX ">
           {skills.map((skill, index)=>(
         <motion.div
+        className=""
         key={skill.id}
         initial="hidden"
         whileInView="visible"
@@ -30,7 +41,7 @@ function Skills() {
           visible: { opacity: 1 , y: 0 }
         }}
         >
-          <SkillCard  {...skill}/>
+          <SkillCard  {...skill} language={language}/>
         </motion.div>
           ))}
       </div>

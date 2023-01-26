@@ -91,7 +91,8 @@ export const skills = [
     {
         id: 'logo-1',
         title: 'Laravel',
-        years: '5 years',
+        yearsEn: '5 Years',
+        yearsEs: '5 Años',
         stat: '90',
         img: laravel,
         visible : true,
@@ -100,7 +101,8 @@ export const skills = [
     {
         id: 'logo-2',
         title: 'TailwindCss',
-        years: '1 year',
+        yearsEn: '1 Year',
+        yearsEs: '1 Año',
         stat: '70',
         img: tailwind,
         visible : true,
@@ -109,7 +111,8 @@ export const skills = [
     {
         id: 'logo-3',
         title: 'Javascript',
-        years: '4 years',
+        yearsEn: '4 Years',
+        yearsEs: '4 Años',
         stat: '80',
         img: javascript,
         visible : true,
@@ -118,7 +121,8 @@ export const skills = [
     {
         id: 'logo-4',
         title: 'MySql',
-        years: '7 years',
+        yearsEn: '7 Years',
+        yearsEs: '7 Años',
         stat: '94',
         img: mysql,
         visible : true,
@@ -127,7 +131,8 @@ export const skills = [
     {
         id: 'logo-5',
         title: 'php',
-        years: '8 years',
+        yearsEn: '8 Years',
+        yearsEs: '8 Años',
         stat: '95',
         img: php,
         visible : true,
@@ -136,7 +141,8 @@ export const skills = [
     {
         id: 'logo-6',
         title: 'ReactJs',
-        years: '1 years',
+        yearsEn: '1 Years',
+        yearsEs: '1 Años',
         stat: '60',
         img: reactjs,
         visible : true,
@@ -145,7 +151,8 @@ export const skills = [
     {
         id: 'logo-7',
         title: 'Liviwire',
-        years: '2 years',
+        yearsEn: '2 Years',
+        yearsEs: '2 Años',
         stat: '91',
         img: livewire,
         visible : true,
@@ -154,7 +161,8 @@ export const skills = [
     {
         id: 'logo-8',
         title: 'Bootstrap',
-        years: '5 years',
+        yearsEn: '5 Years',
+        yearsEs: '5 Años',
         stat: '92',
         img: bootstrap,
         visible : true,
