@@ -31,8 +31,8 @@ function App() {
         <div className="bg-emerald-300 paddingX flexCenter darkMode">
           <div className="boxWidth">
             <Skills language={language} />
+            <Portfolio language={language} />
             <Experiences />
-            <Portfolio />
             <Testimonials />
             <Contact />
             <Footer />

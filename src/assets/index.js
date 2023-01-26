@@ -10,6 +10,11 @@ import download from './download.svg'
 import sun from './sun.svg'
 import moon from './moon.svg'
 
+//portfolio images
+import trips from './trips-project.png'
+import todoapp from './todoapp-project.png'
+import hoobank from './hoobank-project.png'
+
 // iconos de logos
 import javascript from './javascript.png'
 import bootstrap from './bootstrap.png'
@@ -40,5 +45,8 @@ export {
     mysql,
     php,
     reactjs,
-    tailwind
+    tailwind,
+    trips,
+    todoapp,
+    hoobank
 }

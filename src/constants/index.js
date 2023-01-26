@@ -10,6 +10,10 @@ import {
     , tailwind
     , javascript
     , bootstrap
+    , trips
+    , todoapp
+    , hoobank
+
 } from '../assets'
 
 export const navLinks = [
@@ -29,14 +33,14 @@ export const navLinks = [
         titleEs: 'Habilidades',
     },
     {
-        id: 'experiences',
-        titleEn: 'Experiences',
-        titleEs: 'Experiencia',
-    },
-    {
         id: 'portfolio',
         titleEn: 'Portfolio',
         titleEs: 'Portafolio',
+    },
+    {
+        id: 'experiences',
+        titleEn: 'Experiences',
+        titleEs: 'Experiencia',
     },
     {
         id: 'testimonials',
@@ -60,8 +64,7 @@ export const aboutInfo =
         buttonEn : "Contact me!",
         buttonEs : "Contactame!",
 
-    }
-;
+};
 
 export const socialMediaIcons = [
     {
@@ -168,4 +171,75 @@ export const skills = [
         visible : true,
         current : false,
     },
-]
+];
+
+export const portfolio = [
+    {
+        id:'project-1',
+        img: trips,
+        titleEn: 'Page Trips',
+        titleEs: 'Pagina de Viajes',
+        contentEn: 'This is a little web page that I created when I was learing to use TailwindCss.',
+        contentEs: 'Esta esa una pagina simple que cree cuando estaba aprendiendo a usar TailwindCss.',
+        visible: true,
+        link:'https://reniervargas.com/trips/',
+        code_link:'https://github.com/renier1989/trips',
+        tech: [
+            {
+                id:'tech-1',
+                img:'img-tech1'
+            }
+        ],
+    },
+    {
+        id:'project-2',
+        img: todoapp,
+        titleEn: 'Todo App',
+        titleEs: 'App de Tareas',
+        contentEn: 'A little web page I made for learing and practice some cool things about ReactJs.',
+        contentEs: 'Una pagina simple que hice para aprender y practicar algunas cosas geniales de ReactJs.',
+        visible: true,
+        link:'https://reniervargas.com/todo-app/',
+        code_link:'https://github.com/renier1989/todo-app',
+        tech: [
+            {
+                id:'tech-1',
+                img:'img-tech1'
+            }
+        ],
+    },
+    {
+        id:'project-3',
+        img: hoobank,
+        titleEn: 'HooBank',
+        titleEs: 'HooBank',
+        contentEn: 'A web page that I created using ReactJs and TailwindCss to practice both technologies. It looks awesome! ',
+        contentEs: 'Una pagina que cree usando ReactJs y TailwindCss para practicar ambas tecnologias. Se ve genial! ',
+        visible: true,
+        link:'http://reniervargas.com/hoobank/',
+        code_link:'https://github.com/renier1989/hoobank',
+        tech: [
+            {
+                id:'tech-1',
+                img:'img-tech1'
+            }
+        ],
+    },
+    {
+        id:'project-4',
+        img: hoobank,
+        titleEn: 'HooBank',
+        titleEs: 'HooBank',
+        contentEn: 'A web page that I created using ReactJs and TailwindCss to practice both technologies. It looks awesome! ',
+        contentEs: 'Una pagina que cree usando ReactJs y TailwindCss para practicar ambas tecnologias. Se ve genial! ',
+        visible: false,
+        link:'http://reniervargas.com/hoobank/',
+        code_link:'https://github.com/renier1989/hoobank',
+        tech: [
+            {
+                id:'tech-1',
+                img:'img-tech1'
+            }
+        ],
+    },
+];

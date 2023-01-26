@@ -5,7 +5,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function About(props) {
   return (
-    <section id="about" className="flex md:flex-row flex-col py-20">
+    <section id="about" className="flex md:flex-row flex-col md:py-72 py-32">
 
       {/* Here will go the image section */}
       <div className="md:order-2 flex-1 justify-center basis-3/12 flexCenter">
