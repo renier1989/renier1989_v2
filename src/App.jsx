@@ -1,5 +1,5 @@
 // import styles from "./constants/style"
-import { Header, About, Skills, Experiences, Portfolio, Testimonials, Contact, Footer } from "./components"
+import { Header, Home, About, Skills, Experiences, Portfolio, Testimonials, Contact, Footer } from "./components"
 import { useState } from "react"
 
 function App() {
@@ -20,6 +20,13 @@ function App() {
               />
           </div>
       
+        {/* Here goes the About section */}
+        <div className="bg-emerald-400 flexCenter darkMode paddingX">
+          <div className="boxWidth">
+            <Home language={language} setLanguage={setLanguage}/>
+          </div>
+        </div>
+
         {/* Here goes the About section */}
         <div className="bg-emerald-400 flexCenter darkMode paddingX">
           <div className="boxWidth">

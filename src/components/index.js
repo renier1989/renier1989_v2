@@ -1,3 +1,4 @@
+import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Experiences from './Experiences';
@@ -8,6 +9,7 @@ import Skills from './Skills';
 import Testimonials from './Testimonials';
 
 export {
+    Home,
     About,
     Contact,
     Experiences,

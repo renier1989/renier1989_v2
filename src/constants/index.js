@@ -54,11 +54,21 @@ export const navLinks = [
     },
 ];
 
+export const homeInfo = {
+        // information home
+        shortInfoEn : "I'm a Systems Engineer specializing in Fullstack web development with expertise in designing and building administrative systems and websites that meet specific client requirements.",
+        shortInfoEs : "Soy Ingeniero en Sistemas especializado en el desarrollo web Fullstack con experiencia en la creación de sistemas administrativos y sitios web adaptados a las necesidades específicas de los clientes.",
+
+        // text for button of contact
+        buttonEn : "Contact me!",
+        buttonEs : "Contactame!",
+}
+
 export const aboutInfo = 
     {
-        // information about
-        infoEn : "I'm Renier Vargas Web Developer",
-        infoEs : "Soy Renier Vargas Desarrollador Web",
+        // information home
+        infoEn : "I'm a Systems Engineer specializing in Fullstack web development with expertise in designing and building administrative systems and websites that meet specific client requirements.",
+        infoEs : "Soy Ingeniero en Sistemas especializado en el desarrollo web Fullstack con experiencia en la creación de sistemas administrativos y sitios web adaptados a las necesidades específicas de los clientes.",
 
         // text for button of contact
         buttonEn : "Contact me!",
