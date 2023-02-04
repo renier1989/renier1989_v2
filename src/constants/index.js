@@ -59,6 +59,9 @@ export const homeInfo = {
         shortInfoEn : "I'm a Systems Engineer specializing in Fullstack web development with expertise in designing and building administrative systems and websites that meet specific client requirements.",
         shortInfoEs : "Soy Ingeniero en Sistemas especializado en el desarrollo web Fullstack con experiencia en la creación de sistemas administrativos y sitios web adaptados a las necesidades específicas de los clientes.",
 
+        shortPhraseEn : "Creating innovative digital solutions.",
+        shortPhraseEs : "Creando soluciones digitales e innovadoras.",
+
         // text for button of contact
         buttonEn : "Contact me!",
         buttonEs : "Contactame!",
@@ -68,7 +71,7 @@ export const aboutInfo =
     {
         // information home
         infoEn : "I'm a Systems Engineer specializing in Fullstack web development with expertise in designing and building administrative systems and websites that meet specific client requirements.",
-        infoEs : "Soy Ingeniero en Sistemas especializado en el desarrollo web Fullstack con experiencia en la creación de sistemas administrativos y sitios web adaptados a las necesidades específicas de los clientes.",
+        infoEs : `Cuento con más de 9 años de experiencia en el ámbito tecnológico centrados en el Desarrollo como Backend, Frontend, Base de datos, Administración y Gestión de versiones, haciendo uso de tecnologías como Php, Laravel Framework, Laravel Livewire, Javascript, AlpineJS, VueJs, Bootstrap, Bulma, TailwindCSS, MySQL, PostgresSQL, HTML, CSS, PHPMyAdmin, Git, GiyHub, GitLab, Bitbucket. <br> holas`,
 
         // text for button of contact
         buttonEn : "Contact me!",
@@ -251,5 +254,86 @@ export const portfolio = [
                 img:'img-tech1'
             }
         ],
+    },
+];
+
+export const experiences = [
+    {
+        id: 'experience-1',
+        nameJobEn: 'Experience 1',
+        nameJobEs: 'Experiencia 1',
+        datesEn : 'Jul 2020 - Present',
+        datesEs : 'Jul 2020 - Actual',
+        positionEn: 'Programmer Amalyst',
+        positionEs: 'Analista Programador',
+        roles: [
+            {
+                id:'role-1',
+                descriptionEn : 'description number 1',
+                descriptionEs : 'descripcion numero 1',
+            },
+            {
+                id:'role-2',
+                descriptionEn : 'description number 2',
+                descriptionEs : 'descripcion numero 2',
+            },
+            {
+                id:'role-3',
+                descriptionEn : 'description number 3',
+                descriptionEs : 'descripcion numero 3',
+            },
+        ]
+    },
+    {
+        id: 'experience-2',
+        nameJobEn: 'Experience 2',
+        nameJobEs: 'Experiencia 2',
+        datesEn : 'Apr 2018 - Jul 2020',
+        datesEs : 'Abr 2020 - Jul 2020',
+        positionEn: 'Web Developer',
+        positionEs: 'Desarrollador Web',
+        roles: [
+            {
+                id:'role-1',
+                descriptionEn : 'description number 1',
+                descriptionEs : 'descripcion numero 1',
+            },
+            {
+                id:'role-2',
+                descriptionEn : 'description number 2',
+                descriptionEs : 'descripcion numero 2',
+            },
+            {
+                id:'role-3',
+                descriptionEn : 'description number 3',
+                descriptionEs : 'descripcion numero 3',
+            },
+        ]
+    },
+    {
+        id: 'experience-3',
+        nameJobEn: 'Experience 3',
+        nameJobEs: 'Experiencia 2',
+        datesEn : 'Apr 2018 - Jul 2020',
+        datesEs : 'Abr 2020 - Jul 2020',
+        positionEn: 'Web Developer',
+        positionEs: 'Desarrollador Web',
+        roles: [
+            {
+                id:'role-1',
+                descriptionEn : 'description number 1',
+                descriptionEs : 'descripcion numero 1',
+            },
+            {
+                id:'role-2',
+                descriptionEn : 'description number 2',
+                descriptionEs : 'descripcion numero 2',
+            },
+            {
+                id:'role-3',
+                descriptionEn : 'description number 3',
+                descriptionEs : 'descripcion numero 3',
+            },
+        ]
     },
 ];

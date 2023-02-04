@@ -6,25 +6,25 @@ function Header(props) {
   const [toggle, setToggle] = useState(false);
   
   return (
-    <nav  className="bg-emerald-300 fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkMode darkText  z-50 " >
+    <nav  className="bg-fourth fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkMode darkText  z-50 " >
       <img src={react} alt="logo" />
 
       {/* esto es para el navbar de la version de escritorio  */}
-        <ul className="list-none sm:flex hidden justify-center items-center flex-1 ">
+        <ul className="list-none sm:flex hidden justify-center items-center flex-1  ">
           {/* hacemos el recorrido de cada uno de los links para el navbar */}
           {navLinks.map((nav, index)=> (
-            <li key={nav.id} className={`font-poppins font-semibold cursor-pointer text-[16px] ${index !== navLinks - 1 ? 'm-2' : ''} text-gray-700 darkText`}>
+            <li key={nav.id} className={`font-poppins font-semibold cursor-pointer text-third text-[20px] ${index !== navLinks - 1 ? 'm-2' : ''} text-gray-700 darkText`}>
               <a href={`#${nav.id}`} > { props.language ? nav.titleEs : nav.titleEn } </a>
             </li>
           ))}
         </ul>
         <div className="justify-end items-center sm:flex hidden">
-          <div className="cursor-pointer" onClick={() => props.setDarkMode((prev)=> !prev)}>
+          {/* <div className="cursor-pointer" onClick={() => props.setDarkMode((prev)=> !prev)}>
             <img src={props.darkMode ? sun : moon} alt="darkMode" className="dark:invert"/>
           </div>
-          <span className="mx-2">|</span> 
+          <span className="mx-2">|</span>  */}
           <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
-            <div className={`bg-gray-600  p-[4px] rounded-md font-semibold text-white dark:bg-gray-400 dark:text-gray-200 dark:transition dark:duration-500`}>
+            <div className={`bg-third  p-[4px] rounded-md font-semibold text-white dark:bg-gray-400 dark:text-gray-200 dark:transition dark:duration-500`}>
 
                 {props.language ? (
                   <div>EN</div>

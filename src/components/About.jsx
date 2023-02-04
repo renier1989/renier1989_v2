@@ -1,17 +1,20 @@
 import {motion} from 'framer-motion'
-import {renier, renierbg } from '../assets';
+import {renier, renierbg, renier2 } from '../assets';
 import { aboutInfo } from '../constants';
 import SocialMediaIcons from './SocialMediaIcons';
 
 function About(props) {
   return (
-    <section id="about" className="flex md:flex-row flex-col md:py-72 py-32">
+    <section id="about" className="flex md:flex-row flex-col md:py-56 py-20">
 
       {/* Here will go the image section */}
-      <div className="md:order-2 flex-1 justify-center basis-3/12 flexCenter">
-        <div className="">
-          <img src={renier} alt="profile" className="md:w-[400px] md:h-[400px] hover:filter hover:saturate-150 transition duration-500 z-10" />
+      <div className="md:order-2 flex-1 justify-center  flexCenter">
+        <div className="md:relative z-0 md:ml-20 before:absolute before:-top-10 before:-left-10 md:before:w-full before:max-w-[400px] before:h-full before:border-2 before:rounded-md before:border-fourth before:z-[-1] 
+        ease-in-out hover:before:translate-y-2 hover:before:translate-x-2 delay-150 hover:before:transition hover:before:duration-500
+        ">
+          <img src={renier2} alt="profile" className="md:w-[400px] md:h-[400px]  md:saturate-50 md:hover:filter md:hover:saturate-150 transition ease-in-out duration-500 z-10 rounded-md" />
         </div>
+        
       </div>
 
       {/* Here will go the Name and some information */}
@@ -30,7 +33,7 @@ function About(props) {
             Renier Vargas
           </p>
 
-          <p className="text-sm font-medium paragraph">
+          <p className=" font-medium paragraph ">
             {props.language ? aboutInfo.infoEs : aboutInfo.infoEn}
           </p>
         </motion.div>
@@ -48,7 +51,7 @@ function About(props) {
           visible: { opacity: 1 , x: 0 }
         }}
         >
-          <a href="#contact" className='font-semibold text-white bg-red-500 rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
+          <a href="#contact" className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
             {props.language ? aboutInfo.buttonEs : aboutInfo.buttonEn}
           </a>
 

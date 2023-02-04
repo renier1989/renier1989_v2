@@ -4,7 +4,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 function Home(props) {
   return (
-    <section id="home" className="flex md:flex-row flex-col md:py-72 py-32">
+    <section id="home" className="flex md:flex-row flex-col md:py-52 py-32">
 
       {/* Here will go the Name and some information */}
       <div className=" px-6 sm:px-16 flex-col flexCenter md:items-start md:text-start">
@@ -22,9 +22,14 @@ function Home(props) {
           <p className="heading3">
             Renier Vargas
           </p>
+          <p className='heading1'>
+            {props.language ? homeInfo.shortPhraseEs : homeInfo.shortPhraseEn}
+          </p>
 
-          <div className="text-sm font-medium paragraph sm:mr-[610px]">
+          <div className="text-sm font-medium paragraph sm:mr-[590px]">
             {props.language ? homeInfo.shortInfoEs : homeInfo.shortInfoEn}
+            <h1>
+            </h1>
           </div>
         </motion.div>
 
@@ -41,7 +46,7 @@ function Home(props) {
           visible: { opacity: 1 , x: 0 }
         }}
         >
-          <a href="#contact" className='font-semibold text-white bg-red-500 rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
+          <a href="#contact" className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
             {props.language ? homeInfo.buttonEs : homeInfo.buttonEn}
           </a>
 

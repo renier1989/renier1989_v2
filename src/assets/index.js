@@ -2,6 +2,7 @@ import react from './react.svg'
 import menu from './menu.svg'
 import close from './close.svg'
 import renier from './renier1989_person.png'
+import renier2 from './renier1989_2.png'
 import renierbg from './renier1989.png'
 import linkedin from './linkedin.svg'
 import github from './github.svg'
@@ -31,6 +32,7 @@ export {
     menu,
     close,
     renier,
+    renier2,
     renierbg,
     linkedin,
     github,

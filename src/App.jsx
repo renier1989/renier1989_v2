@@ -8,7 +8,8 @@ function App() {
   const [language, setLanguage] = useState(false);
   return (
 
-    <div className={`w-full overflow-hidden ${darkMode ? 'dark' : ''} font-poppins`}>
+    <div className={`w-full overflow-hidden dark font-poppins`}>
+    {/* <div className={`w-full overflow-hidden ${darkMode ? 'dark' : ''} font-poppins`}> */}
         {/* Here goes the NavBar */}
         
           <div className="boxWidth">
@@ -21,25 +22,25 @@ function App() {
           </div>
       
         {/* Here goes the About section */}
-        <div className="bg-emerald-400 flexCenter darkMode paddingX">
+        <div className="bg-first flexCenter darkMode paddingX">
           <div className="boxWidth">
             <Home language={language} setLanguage={setLanguage}/>
           </div>
         </div>
 
         {/* Here goes the About section */}
-        <div className="bg-emerald-400 flexCenter darkMode paddingX">
+        <div className="bg-first flexCenter darkMode paddingX">
           <div className="boxWidth">
             <About language={language} setLanguage={setLanguage}/>
           </div>
         </div>
         
         {/* Here goes the Skills Experiences Portfolio Testimonials Contact Footer sections */}
-        <div className="bg-emerald-300 paddingX flexCenter darkMode">
+        <div className="bg-first paddingX flexCenter darkMode">
           <div className="boxWidth">
             <Skills language={language} />
             <Portfolio language={language} />
-            <Experiences />
+            <Experiences language={language}/>
             <Testimonials />
             <Contact />
             <Footer />

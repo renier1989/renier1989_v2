@@ -147,16 +147,20 @@
 }
 
 
+.heading1 {
+  @apply font-poppins font-semibold xs:text-[38px] text-[30px] text-third xs:leading-[76.8px] leading-[66.8px] w-full darkText;
+}
+
 .heading2 {
-  @apply font-poppins font-semibold xs:text-[48px] text-[40px] text-gray-700 xs:leading-[76.8px] leading-[66.8px] w-full darkText;
+  @apply font-poppins font-semibold xs:text-[48px] text-[40px] text-third xs:leading-[76.8px] leading-[66.8px] w-full darkText;
 }
 
 .heading3 {
-  @apply font-poppins font-semibold xs:text-[70px] text-[40px] text-gray-700 xs:leading-[76.8px] leading-[66.8px] w-full darkText;
+  @apply font-poppins font-semibold xs:text-[70px] text-[40px] text-third xs:leading-[76.8px] leading-[66.8px] w-full darkText;
 }
 
 .paragraph {
-  @apply font-poppins font-normal text-gray-700 text-[18px] leading-[30.8px] darkText;
+  @apply font-poppins font-normal text-third text-[18px] leading-[30.8px] darkText;
 }
 
 .flexCenter {
