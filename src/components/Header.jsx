@@ -1,13 +1,22 @@
 import { useState } from "react";
-import { react, menu, close, sun , moon } from "../assets";
+import { 
+    logo1, 
+    logo2, 
+    icon1, 
+    icon2, 
+    logo1w, 
+    logo2w, 
+    icon1w, 
+    icon2w, 
+    menu, close, sun , moon } from "../assets";
 import { navLinks } from "../constants";
 
 function Header(props) {
   const [toggle, setToggle] = useState(false);
   
   return (
-    <nav  className="bg-fourth fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkMode darkText  z-50 " >
-      <img src={react} alt="logo" />
+    <nav  className="dark:bg-gray-800  fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkMode darkText  z-50 " >
+      <img src={icon2w} alt="logo" className="w-[50px]"/>
 
       {/* esto es para el navbar de la version de escritorio  */}
         <ul className="list-none sm:flex hidden justify-center items-center flex-1  ">
@@ -24,7 +33,7 @@ function Header(props) {
           </div>
           <span className="mx-2">|</span>  */}
           <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
-            <div className={`bg-third  p-[4px] rounded-md font-semibold text-white dark:bg-gray-400 dark:text-gray-200 dark:transition dark:duration-500`}>
+            <div className={`bg-third  p-[4px] rounded-md font-semibold text-white dark:bg-first dark:text-gray-800 dark:transition dark:duration-500`}>
 
                 {props.language ? (
                   <div>EN</div>
@@ -50,9 +59,9 @@ function Header(props) {
               </li>
             ))}
             <div className=" flex space-x-16 items-center mt-5">
-              <div className="cursor-pointer" onClick={() => props.setDarkMode((prev)=> !prev)}> 
+              {/* <div className="cursor-pointer" onClick={() => props.setDarkMode((prev)=> !prev)}> 
                 <img src={props.darkMode ? sun : moon} alt="darkMode" className="dark:invert"/>
-              </div>
+              </div> */}
               <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
               <div className={`bg-gray-600  p-[4px] rounded-md font-semibold text-white dark:bg-gray-400 dark:text-gray-200 dark:transition dark:duration-500`}>
 

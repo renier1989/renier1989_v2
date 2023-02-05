@@ -8,7 +8,7 @@ function App() {
   const [language, setLanguage] = useState(false);
   return (
 
-    <div className={`w-full overflow-hidden dark font-poppins`}>
+    <div className={`w-full overflow-hidden overflow-x-hidden dark font-poppins`}>
     {/* <div className={`w-full overflow-hidden ${darkMode ? 'dark' : ''} font-poppins`}> */}
         {/* Here goes the NavBar */}
         

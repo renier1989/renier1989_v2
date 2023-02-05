@@ -12,9 +12,8 @@ function About(props) {
         <div className="md:relative z-0 md:ml-20 before:absolute before:-top-10 before:-left-10 md:before:w-full before:max-w-[400px] before:h-full before:border-2 before:rounded-md before:border-fourth before:z-[-1] 
         ease-in-out hover:before:translate-y-2 hover:before:translate-x-2 delay-150 hover:before:transition hover:before:duration-500
         ">
-          <img src={renier2} alt="profile" className="md:w-[400px] md:h-[400px]  md:saturate-50 md:hover:filter md:hover:saturate-150 transition ease-in-out duration-500 z-10 rounded-md" />
+          <img src={renier2} alt="profile" className="md:w-[400px] md:h-[400px]  md:saturate-150 md:hover:filter  transition ease-in-out duration-500 z-10 rounded-md" />
         </div>
-        
       </div>
 
       {/* Here will go the Name and some information */}

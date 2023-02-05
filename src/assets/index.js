@@ -26,6 +26,18 @@ import php from './php.png'
 import reactjs from './reactjs.png'
 import tailwind from './tailwind.png'
 
+// icons and logos for web page RENIER VARGAS
+import logo1 from './logo-1.png'
+import logo2 from './logo-2.png'
+import icon1 from './icono-1.png'
+import icon2 from './icono-2.png'
+// Same icons and logos white version
+import logo1w from './logo-1-white.png'
+import logo2w from './logo-2-white.png'
+import icon1w from './icono-1-white.png'
+import icon2w from './icono-2-white.png'
+import logo2g from './logo-2-gray.png'
+
 
 export {
     react,
@@ -50,5 +62,14 @@ export {
     tailwind,
     trips,
     todoapp,
-    hoobank
+    hoobank,
+    logo1,
+    logo2,
+    icon1,
+    icon2,
+    logo1w,
+    logo2w,
+    icon1w,
+    icon2w,
+    logo2g,
 }
