@@ -8,7 +8,7 @@ function Experiences({language}) {
 
   return (
     
-      <section id="experiences" className="py-20 text-third  dark:bg-gray-800 dark:text-gray-100">
+      <section id="experiences" className="py-10 md:py-20 text-third  dark:bg-gray-800 dark:text-gray-100">
 
         {/* Here goes the Experiences Text and some info. */}
         <motion.div
@@ -47,7 +47,7 @@ function Experiences({language}) {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-5 p-4 md:p-8">
+        <div className="md:grid md:grid-cols-5 p-4 md:p-8">
           {/* Here goes the tabs on de left side */}
           <motion.div
           initial="hidden"
@@ -59,11 +59,11 @@ function Experiences({language}) {
             visible: { opacity: 1 , x: 0 }
           }}
           >
-            <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
+            <div className="flex justify-center px-4 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start ">
               {experiences.map((exp, index)=>(
                 <button key={index} 
                     onClick={()=> setTab(exp.id)}
-                    className={`p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${tab === exp.id ? 'border-emerald-900 dark:border-gray-300  dark:text-gray-400' : ''} `}>
+                    className={`p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${tab === exp.id ? 'border-emerald-900 dark:bg-fourth dark:border-gray-800  dark:text-white' : ''} `}>
                   {language ? exp.nameJobEn : exp.nameJobEs}
                 </button>
               ))}
@@ -81,7 +81,7 @@ function Experiences({language}) {
             visible: { opacity: 1 , x: 0 }
           }}
           >
-            <div className=" text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left">
+            <div className=" text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left pt-12 md:pt-0">
               {experiences.map((exp, index)=>(
                 <div key={index} className={`flex flex-col items-center justify-center  md:justify-start md:items-start ${tab === exp.id ? '' : 'hidden'} `}>
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-violet-400">

@@ -4,7 +4,7 @@ import { skills } from "../constants"
 
 function Skills({language}) {
   return (
-    <section id="skills" className="flex flex-col py-20">
+    <section id="skills" className="flex flex-col py-20 bg-gray-800 rounded-md">
       {/* Here goes part of the title SKILLS and some texte */}
       <motion.div
       initial="hidden"
