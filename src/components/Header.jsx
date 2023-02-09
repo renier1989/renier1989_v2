@@ -15,7 +15,7 @@ function Header(props) {
   const [toggle, setToggle] = useState(false);
   
   return (
-    <nav  className="dark:bg-gray-800  fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkMode darkText  z-50 " >
+    <nav  className="bg-second  fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkText z-50 " >
       <img src={icon2w} alt="logo" className="w-[50px]"/>
 
       {/* esto es para el navbar de la version de escritorio  */}
@@ -50,7 +50,7 @@ function Header(props) {
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev)=>!prev)} />
 
-        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-emerald-500 dark:bg-gray-700 absolute top-20 right-0 mx-4 my-2 min-w-[240px] rounded-xl sidebar`}>
+        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-second  absolute top-20 right-0 mx-4 my-2 min-w-[240px] rounded-xl sidebar`}>
           <ul className="list-none flex flex-col justify-center items-center flex-1">
             {/* hacemos el recorrido de cada uno de los links para el navbar */}
             {navLinks.map((nav, index)=> (

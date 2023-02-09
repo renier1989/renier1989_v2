@@ -189,8 +189,8 @@
 
 /* DARK MODE **************************************** DARK MODE */
 .darkMode {
-  @apply dark:bg-gray-700 transition duration-700;
+  @apply bg-third transition duration-700;
 }
 .darkText {
-  @apply dark:text-white transition duration-700;
+  @apply text-white transition duration-700;
 }
