@@ -22,8 +22,8 @@ function Header(props) {
         <ul className="list-none sm:flex hidden justify-center items-center flex-1  ">
           {/* hacemos el recorrido de cada uno de los links para el navbar */}
           {navLinks.map((nav, index)=> (
-            <li key={nav.id} className={`font-poppins font-semibold cursor-pointer text-third text-[20px] ${index !== navLinks - 1 ? 'm-2' : ''} text-gray-700 darkText`}>
-              <a href={`#${nav.id}`} > { props.language ? nav.titleEs : nav.titleEn } </a>
+            <li key={nav.id} className={` ${nav.visible ? '':'hidden'} font-poppins font-semibold cursor-pointer text-third text-[20px] ${index !== navLinks - 1 ? 'm-2' : ''} text-gray-700 darkText`}>
+              <a href={`#${nav.id} `} > { props.language ? nav.titleEs : nav.titleEn } </a>
             </li>
           ))}
         </ul>
@@ -54,8 +54,8 @@ function Header(props) {
           <ul className="list-none flex flex-col justify-center items-center flex-1">
             {/* hacemos el recorrido de cada uno de los links para el navbar */}
             {navLinks.map((nav, index)=> (
-              <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index !== navLinks - 1 ? 'mb-2' : ''}`}>
-                <a href={`#${nav.id}`} > { props.language ? nav.titleEs : nav.titleEn } </a>
+              <li key={nav.id} className={` ${nav.visible ? '':'hidden'} font-poppins font-normal cursor-pointer text-[16px] ${index !== navLinks - 1 ? 'mb-2' : ''}`}>
+                <a href={`#${nav.id} `} > { props.language ? nav.titleEs : nav.titleEn } </a>
               </li>
             ))}
             <div className=" flex space-x-16 items-center mt-5">

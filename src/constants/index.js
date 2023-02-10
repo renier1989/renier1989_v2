@@ -21,36 +21,43 @@ export const navLinks = [
         id: 'home',
         titleEn: 'Home',
         titleEs: 'Inicio',
+        visible:true,
     },
     {
         id: 'about',
         titleEn: 'About',
         titleEs: 'Acerca de',
+        visible:true,
     },
     {
         id: 'skills',
         titleEn: 'Skills',
         titleEs: 'Habilidades',
+        visible:true,
     },
     {
         id: 'portfolio',
         titleEn: 'Portfolio',
         titleEs: 'Portafolio',
+        visible:true,
     },
     {
         id: 'experiences',
         titleEn: 'Experiences',
         titleEs: 'Experiencia',
+        visible:true,
     },
     {
         id: 'testimonials',
         titleEn: 'Testimonials',
         titleEs: 'Referencias',
+        visible:false,
     },
     {
         id: 'contact',
         titleEn: 'Contact',
         titleEs: 'Contanto',
+        visible:true,
     },
 ];
 

@@ -41,7 +41,8 @@ function App() {
             <Skills language={language} />
             <Portfolio language={language} />
             <Experiences language={language}/>
-            <Testimonials />
+            {/* <Testimonials /> */}
+            
             <Contact />
             <Footer />
           </div>
