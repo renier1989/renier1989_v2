@@ -5,7 +5,8 @@ import { portfolio } from '../constants'
 
 function Portfolio({language}) {
   return (
-    <section id="portfolio" className="pt-48 pb-48">
+    <section id="portfolio" className="pt-48 pb-48 ">
+      <div className="py-2 px-2 bg-second rounded-md">
       {/* Here goes part of the title SKILLS and some texte */}
       <motion.div
       initial="hidden"
@@ -17,7 +18,7 @@ function Portfolio({language}) {
         visible: { opacity: 1 , y: 0 }
       }}
       >
-        <div className='flex-1 px-6 sm:px-16 flexCenter md:items-start md:text-start md:flex-row flex-col mb-5'>
+        <div className='flex-1 px-6 sm:px-16 flexCenter md:items-start md:text-start md:flex-row flex-col mb-5 '>
           <h1 className={`heading2`}>
             {language ? (
               <p>Portafolio</p>
@@ -87,6 +88,7 @@ function Portfolio({language}) {
 
           ))}
         </motion.div>
+      </div>
       </div>
     </section>
   )

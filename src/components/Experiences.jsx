@@ -8,7 +8,7 @@ function Experiences({language}) {
 
   return (
     
-      <section id="experiences" className="py-10 md:py-20 text-third  dark:bg-gray-800 dark:text-gray-100">
+      <section id="experiences" className="py-10 md:py-20 text-first bg-second rounded-md">
 
         {/* Here goes the Experiences Text and some info. */}
         <motion.div
@@ -63,7 +63,7 @@ function Experiences({language}) {
               {experiences.map((exp, index)=>(
                 <button key={index} 
                     onClick={()=> setTab(exp.id)}
-                    className={`p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${tab === exp.id ? 'border-emerald-900 dark:bg-fourth dark:border-gray-800  dark:text-white' : ''} `}>
+                    className={`p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${tab === exp.id ? 'border-black bg-fourth' : ''} `}>
                   {language ? exp.nameJobEn : exp.nameJobEs}
                 </button>
               ))}
@@ -84,7 +84,7 @@ function Experiences({language}) {
             <div className=" text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left pt-12 md:pt-0">
               {experiences.map((exp, index)=>(
                 <div key={index} className={`flex flex-col items-center justify-center  md:justify-start md:items-start ${tab === exp.id ? '' : 'hidden'} `}>
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 dark:text-violet-400">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-violet-400">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                   </svg>
                   <h5 className="text-xl font-semibold">{language ? exp.positionEn : exp.positionEs}</h5>
