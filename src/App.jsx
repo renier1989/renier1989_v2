@@ -3,7 +3,7 @@ import { Header, Home, About, Skills, Experiences, Portfolio, Testimonials, Cont
 import { useState } from "react"
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
   // FALSE = English - TRUE = Spanish
   const [language, setLanguage] = useState(false);
   return (
@@ -14,8 +14,6 @@ function App() {
         
           <div className="boxWidth">
             <Header 
-              darkMode={darkMode} 
-              setDarkMode={setDarkMode} 
               language={language}
               setLanguage={setLanguage}
               />
@@ -42,12 +40,16 @@ function App() {
             <Portfolio language={language} />
             <Experiences language={language}/>
             {/* <Testimonials /> */}
-            
-            <Contact />
-            <Footer />
+            <Contact language={language}/>
           </div>
         </div>
 
+        {/* Here goes the About section */}
+        <div className="bg-second flexCenter p-2 paragraph">
+          <div className="boxWidth">
+            <Footer language={language}/>
+          </div>
+        </div>
 
 
     </div>

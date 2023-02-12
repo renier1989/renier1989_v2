@@ -267,8 +267,8 @@ export const portfolio = [
 export const experiences = [
     {
         id: 'experience-1',
-        nameJobEn: 'Experience 1',
-        nameJobEs: 'Experiencia 1',
+        nameJobEn: 'FENACREP',
+        nameJobEs: 'FENACREP',
         datesEn : 'Jul 2020 - Present',
         datesEs : 'Jul 2020 - Actual',
         positionEn: 'Programmer Amalyst',
@@ -276,25 +276,25 @@ export const experiences = [
         roles: [
             {
                 id:'role-1',
-                descriptionEn : 'description number 1',
-                descriptionEs : 'descripcion numero 1',
+                descriptionEn : 'Technical analysis and documentation: Conduct technical analysis of functional requirements and document them to establish the methodology to follow.',
+                descriptionEs : 'Análisis y documentación técnica: Realizar el análisis técnico de los requerimientos funcionales y documentarlos para establecer la metodología a seguir.',
             },
             {
                 id:'role-2',
-                descriptionEn : 'description number 2',
-                descriptionEs : 'descripcion numero 2',
+                descriptionEn : 'Development and implementation: Model databases, design prototypes, develop code, prepare pre-production environments and prepare program documentation to meet requirements and provide a good user experience.',
+                descriptionEs : 'Desarrollo y implementación: Modelar bases de datos, diseñar prototipos, desarrollar la codificación, preparar los ambientes de preproducción y preparar la documentación de los programas para satisfacer los requerimientos y ofrecer una buena experiencia de usuario.',
             },
             {
                 id:'role-3',
-                descriptionEn : 'description number 3',
-                descriptionEs : 'descripcion numero 3',
+                descriptionEn : 'Maintenance and technical support: Provide maintenance and technical support to existing applications and fulfill any other functions assigned by the Chief Information Technologies Officer.',
+                descriptionEs : 'Mantenimiento y soporte técnico: Brindar mantenimiento y soporte técnico a las aplicaciones existentes y cumplir con cualquier otra función asignada por el Jefe de Tecnologías de Información.',
             },
         ]
     },
     {
         id: 'experience-2',
-        nameJobEn: 'Experience 2',
-        nameJobEs: 'Experiencia 2',
+        nameJobEn: 'Pacific Institute',
+        nameJobEs: 'Instituto Pacífico',
         datesEn : 'Apr 2018 - Jul 2020',
         datesEs : 'Abr 2020 - Jul 2020',
         positionEn: 'Web Developer',
@@ -302,44 +302,44 @@ export const experiences = [
         roles: [
             {
                 id:'role-1',
-                descriptionEn : 'description number 1',
-                descriptionEs : 'descripcion numero 1',
+                descriptionEn : 'Web Development Analyst: responsible for technical analysis of functional requirements and documentation of methodology to follow.',
+                descriptionEs : 'Analista de desarrollo web: responsable del análisis técnico de los requerimientos funcionales y la documentación de la metodología a seguir.',
             },
             {
                 id:'role-2',
-                descriptionEn : 'description number 2',
-                descriptionEs : 'descripcion numero 2',
+                descriptionEn : 'Web Developer: in charge of development and programming of both the BackEnd and FrontEnd, using different programming frameworks and version control tools.',
+                descriptionEs : 'Desarrollador web: encargado del desarrollo y programación tanto del BackEnd como del FrontEnd, utilizando diferentes frameworks de programación y herramientas de versionado.',
             },
             {
                 id:'role-3',
-                descriptionEn : 'description number 3',
-                descriptionEs : 'descripcion numero 3',
+                descriptionEn : 'Database Administrator: responsible for modeling, design and maintenance of databases in MySQL, using tools such as DbDesigner and Navicat.',
+                descriptionEs : 'Administrador de bases de datos: responsable de la modelación, diseño y mantenimiento de las bases de datos en MySQL, usando herramientas como DbDesigner y Navicat.',
             },
         ]
     },
     {
         id: 'experience-3',
-        nameJobEn: 'Experience 3',
-        nameJobEs: 'Experiencia 2',
+        nameJobEn: 'Garzon Hypermarket',
+        nameJobEs: 'Garzon Hipermercado',
         datesEn : 'Apr 2018 - Jul 2020',
         datesEs : 'Abr 2020 - Jul 2020',
         positionEn: 'Web Developer',
-        positionEs: 'Desarrollador Web',
+        positionEs: 'Especialista Programador',
         roles: [
             {
                 id:'role-1',
-                descriptionEn : 'description number 1',
-                descriptionEs : 'descripcion numero 1',
+                descriptionEn : 'Internal Module Developer: responsible for the implementation of internal modules on the IntraGarzon website using PHP, JavaScript, HTML, CSS and Bootstrap for the internal employees of the company.',
+                descriptionEs : 'Desarrollador de módulos internos: responsable de la implementación de módulos internos en la página de IntraGarzon utilizando PHP, JavaScript, HTML, CSS y Bootstrap para el personal interno de la empresa.',
             },
             {
                 id:'role-2',
-                descriptionEn : 'description number 2',
-                descriptionEs : 'descripcion numero 2',
+                descriptionEn : 'Hosting and Domain Administrator: responsible for managing and maintaining hosting and domains on GoDaddy.',
+                descriptionEs : 'Administrador de hosting y dominios: encargado de la administración y mantenimiento de hosting y dominios en GoDaddy.',
             },
             {
                 id:'role-3',
-                descriptionEn : 'description number 3',
-                descriptionEs : 'descripcion numero 3',
+                descriptionEn : 'Database and Web Server Administrator: responsible for managing and maintaining databases in SQL Server and MySQL, as well as web servers in internal and external Linux environments within the company. This person is also responsible for analyzing, maintaining and updating sales at different branches through SQL queries and transactions handling in SAP environments.',
+                descriptionEs : 'Administrador de bases de datos y servidores web: responsable de la administración y mantenimiento de bases de datos en SQL Server y MySQL, así como de los servidores web en entornos Linux de manejo interno y externo en la empresa. También se encarga del análisis, mantenimiento y actualización de ventas en diferentes sucursales a través de consultas y sentencias SQL y manejo de transacciones SAP.',
             },
         ]
     },

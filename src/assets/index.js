@@ -10,6 +10,7 @@ import instagram from './instagram.svg'
 import download from './download.svg'
 import sun from './sun.svg'
 import moon from './moon.svg'
+import globe from './globe.svg'
 
 //portfolio images
 import trips from './trips-project.png'
@@ -52,6 +53,7 @@ export {
     download,
     sun,
     moon,
+    globe,
     javascript,
     bootstrap,
     laravel,

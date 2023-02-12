@@ -48,10 +48,10 @@ function Contact({language}) {
         }}
         >
           <form action="https://getform.io/f/14f804e9-2ebe-4c12-9a75-6e1b2780f983" method='POST' className='flex flex-col w-full max-w-[600px]'>
-              <input className="p-2" type="text"  name='Name' placeholder='Name'/>
-              <input className="p-2 my-4" type="email"  name='Eame' placeholder='Email'/>
-              <textarea className="p-2" name="Message" rows="10" placeholder='Message'></textarea>
-              <button type='submit' className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 mx-40 justify-center my-8 flex items-center hover:bg-red-700 transition duration-500 '>
+              <input className="bg-gray-500 rounded-sm text-white p-2" type="text"  name='Name' placeholder='Name'/>
+              <input className="bg-gray-500 rounded-sm text-white p-2 my-4" type="email"  name='Eame' placeholder='Email'/>
+              <textarea className="bg-gray-500 rounded-sm tex-w text-white p-2" name="Message" rows="10" placeholder='Message'></textarea>
+              <button type='submit' className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 md:mx-40 mx-20 justify-center my-8 flex items-center hover:bg-red-700 transition duration-500 '>
                 Let's Talk
               </button>
           </form>

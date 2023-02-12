@@ -1,18 +1,9 @@
 import {motion} from 'framer-motion'
 import { homeInfo } from '../constants';
 import SocialMediaIcons from './SocialMediaIcons';
-import {renier, renierbg, renier2,
-  logo1, 
-  logo2, 
-  icon1, 
-  icon2, 
-  logo1w, 
-  logo2w, 
-  logo2g, 
-  icon1w, 
-  icon2w, } from '../assets';
+import {logo2g} from '../assets';
 
-function Home(props) {
+function Home({language, setLanguage }) {
   return (
     <section id="home" className="  flex md:flex-row flex-col md:py-52 py-32 ">
       {/* Here will go the image section */}
@@ -28,7 +19,7 @@ function Home(props) {
                 visible: { opacity: 1 , x: 0 }
               }}
             >
-              <img src={logo2g} alt="profile" className="md:max-w-[700px] md:relative -left-16 top-48 transition duration-500 " />
+              <img src={logo2g} alt="profile" className="md:max-w-[700px] md:relative -left-20 top-48 transition duration-500 " />
             </motion.div>
         </div>
       {/* Here will go the Name and some information */}
@@ -44,16 +35,24 @@ function Home(props) {
             visible: { opacity: 1 , x: 0 }
           }}
         >
-          <p className="paragraph"> Hi, My name is</p>
+          <p className="paragraph"> 
+          {language ? (
+            <p>Hola, me llamo</p>
+          ) : (
+            <p>
+              Hi, My name is
+            </p>
+          )}
+          </p>
           <p className="heading3">
             Renier Vargas
           </p>
           <p className='heading1 '>
-            {props.language ? homeInfo.shortPhraseEs : homeInfo.shortPhraseEn}
+            {language ? homeInfo.shortPhraseEs : homeInfo.shortPhraseEn}
           </p>
 
           <div className="text-sm font-medium paragraph md:mr-[300px]">
-            {props.language ? homeInfo.shortInfoEs : homeInfo.shortInfoEn}
+            {language ? homeInfo.shortInfoEs : homeInfo.shortInfoEn}
             <h1>
             </h1>
           </div>
@@ -73,7 +72,7 @@ function Home(props) {
         }}
         >
           <a href="#contact" className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
-            {props.language ? homeInfo.buttonEs : homeInfo.buttonEn}
+            {language ? homeInfo.buttonEs : homeInfo.buttonEn}
           </a>
 
         </motion.div>

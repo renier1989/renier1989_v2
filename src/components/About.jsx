@@ -19,18 +19,19 @@ function About(props) {
             visible: { opacity: 1 , x: 0 }
           }}
         >
-        <div className="md:relative z-0 md:ml-20 before:absolute before:-top-10 before:-left-10 md:before:w-full before:max-w-[400px] before:h-full before:border-2 before:rounded-md before:border-fourth before:z-[-1] 
+        <div className="md:relative z-0 md:ml-20 before:absolute before:-top-10 before:-left-10 md:before:w-full before:max-w-[400px] before:h-full before:border-2 before:rounded-md md:before:border-fourth before:border-third before:z-[-1] 
         ease-in-out hover:before:translate-y-2 hover:before:translate-x-2 delay-150 hover:before:transition hover:before:duration-500
         ">
-          <img src={renier2} alt="profile" className="md:w-[400px] md:h-[400px]  md:saturate-150 md:hover:filter  transition ease-in-out duration-500 z-10 rounded-md" />
+          <img src={renier2} alt="profile" className=" ss:w-[400px] ss:h-[400px]  md:saturate-150 md:hover:filter  transition ease-in-out duration-500 z-10 rounded-md" />
         </div>
         </motion.div>
 
       </div>
 
       {/* Here will go the Name and some information */}
-      <div className="flex-1 px-6 sm:px-16 flex-col flexCenter md:items-start md:text-start bg-gray-800 rounded-md">
+      <div className="flex-1 px-6 py-5 sm:px-16 flex-col flexCenter md:items-start md:text-start bg-gray-800 rounded-md">
         <motion.div 
+        className="text-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true , amount: 0.5 }}

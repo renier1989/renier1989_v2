@@ -1,14 +1,5 @@
 import { useState } from "react";
-import { 
-    logo1, 
-    logo2, 
-    icon1, 
-    icon2, 
-    logo1w, 
-    logo2w, 
-    icon1w, 
-    icon2w, 
-    menu, close, sun , moon } from "../assets";
+import { icon2w, menu, close, globe } from "../assets";
 import { navLinks } from "../constants";
 
 function Header(props) {
@@ -33,12 +24,18 @@ function Header(props) {
           </div>
           <span className="mx-2">|</span>  */}
           <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
-            <div className={`bg-third  p-[4px] rounded-md font-semibold text-white dark:bg-first dark:text-gray-800 dark:transition dark:duration-500`}>
+            <div className={`bg-first  p-[4px] rounded-md font-semibold text-second`}>
 
                 {props.language ? (
-                  <div>EN</div>
+                  <div className="flex flex-row">
+                    EN 
+                    <img src={globe} alt="lang" className="pl-1" />
+                  </div>
                 ) : (
-                  <div>ES</div>
+                  <div className="flex flex-row">
+                    ES 
+                    <img src={globe} alt="lang" className="pl-1"/>
+                  </div>
                 )}
 
             </div>
