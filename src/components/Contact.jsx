@@ -1,6 +1,32 @@
 import {motion} from 'framer-motion'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact({language}) {
+
+  const form = useRef();
+
+  let sended=false;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ew568ag', 'template_g9ut96c', form.current, 'QCn2clSctbSEZSSjN')
+      .then((result) => {
+        console.log(result.text);
+        console.log('Message sent');
+
+        if(result.text=='OK') {
+          sended = true;
+          document.getElementById("user_name").value = "";
+          document.getElementById("user_email").value = "";
+          document.getElementById("message").value = "";
+        }
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <section id="contact" className="pt-48 pb-48 ">
       <div className='pb-10 pt-10 px-2 bg-second rounded-md'>
@@ -47,16 +73,20 @@ function Contact({language}) {
           visible: { opacity: 1 , y: 0 }
         }}
         >
-          <form action="https://getform.io/f/14f804e9-2ebe-4c12-9a75-6e1b2780f983" method='POST' className='flex flex-col w-full max-w-[600px]'>
-              <input className="bg-gray-500 rounded-sm text-white p-2" type="text"  name='Name' placeholder='Name'/>
-              <input className="bg-gray-500 rounded-sm text-white p-2 my-4" type="email"  name='Eame' placeholder='Email'/>
-              <textarea className="bg-gray-500 rounded-sm tex-w text-white p-2" name="Message" rows="10" placeholder='Message'></textarea>
-              <button type='submit' className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 md:mx-40 mx-20 justify-center my-8 flex items-center hover:bg-red-700 transition duration-500 '>
+          <form  ref={form} onSubmit={sendEmail} action="" className='flex flex-col w-full max-w-[600px]'>
+              <input className="p-2 bg-gray-500 rounded-sm text-white" type="text" id='user_name' name='user_name' placeholder='Name'/>
+              <input className="p-2 bg-gray-500 rounded-sm text-white my-4" type="email" id='user_email' name='user_email' placeholder='Email'/>
+              <textarea className="p-2 bg-gray-500 rounded-sm text-white" id="message" name="message" rows="10" placeholder='Message'></textarea>
+              <button type='submit' className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 mx-40 justify-center my-8 flex items-center hover:bg-red-700 transition duration-500 '>
                 Let's Talk
               </button>
           </form>
 
         </motion.div>
+
+        <div className={`${sended ? 'hidden':''} bg-green-400 mx-[400px] p-2 rounded-sm text-second font-semibold`}>
+            Gracias por contactarte conmigo.
+        </div>
 
 
       </div>
