@@ -29,9 +29,9 @@ function Portfolio({language}) {
           <div className="w-full md:mt-0 mt-6 ">
             <p className='paragraph  md:max-w-[450px] max-w-md mx-auto'>
             {language ? (
-                <i>ESPAÑOL Lorem ipsum dolor sit amet consectetur.</i>
+                <i>Estos algunos de los proyectos en los que he trabajado o he colaborado.</i>
                 ):(
-                <i >ENGLISH Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+                <i >These are some of the projects I have worked on or collaborated on.</i>
               )}
             </p>
           </div>

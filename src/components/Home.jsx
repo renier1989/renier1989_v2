@@ -35,7 +35,8 @@ function Home({language, setLanguage }) {
             visible: { opacity: 1 , x: 0 }
           }}
         >
-          <p className="paragraph"> 
+          
+          <div className="paragraph"> 
           {language ? (
             <p>Hola, me llamo</p>
           ) : (
@@ -43,7 +44,7 @@ function Home({language, setLanguage }) {
               Hi, My name is
             </p>
           )}
-          </p>
+          </div>
           <p className="heading3">
             Renier Vargas
           </p>

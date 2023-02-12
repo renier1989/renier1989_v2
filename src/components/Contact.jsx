@@ -1,30 +1,41 @@
 import {motion} from 'framer-motion'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useState } from "react";
+import {close} from "../assets";
 
 function Contact({language}) {
-
+  const [shownoty, setShownoty] = useState(false);
+  const [showerror, setShowerror] = useState(false);
   const form = useRef();
-
-  let sended=false;
-
   const sendEmail = (e) => {
     e.preventDefault();
+      let nameval = document.getElementById("user_name").value;
+      let emailval = document.getElementById("user_email").value;
+      let messageval= document.getElementById("message").value;
 
-    emailjs.sendForm('service_ew568ag', 'template_g9ut96c', form.current, 'QCn2clSctbSEZSSjN')
-      .then((result) => {
-        console.log(result.text);
-        console.log('Message sent');
-
-        if(result.text=='OK') {
-          sended = true;
-          document.getElementById("user_name").value = "";
-          document.getElementById("user_email").value = "";
-          document.getElementById("message").value = "";
-        }
-      }, (error) => {
-          console.log(error.text);
-      });
+      // a make a validation for not sending empty values
+    if (nameval && emailval && messageval){
+      emailjs.sendForm('service_ew568ag', 'template_g9ut96c', form.current, 'QCn2clSctbSEZSSjN')
+        .then((result) => {
+          console.log(result.text);
+          console.log('Message sent');
+          if(result.text=='OK') {
+            setShowerror(false)
+            setShownoty(true);
+            document.getElementById("user_name").value = "";
+            document.getElementById("user_email").value = "";
+            document.getElementById("message").value = "";
+            setTimeout(() => {
+              setShownoty(false);
+            }, 5000);
+          }
+        }, (error) => {
+            console.log(error.text);
+        });
+    }else{
+      setShowerror(true)
+    }
   };
 
   return (
@@ -49,12 +60,12 @@ function Contact({language}) {
                 <p>Contact</p>
               )}
             </h1>
-            <div className="w-full md:mt-0 mt-6 ">
-              <p className='paragraph  md:max-w-[450px] max-w-md mx-auto'>
+            <div className=" md:mt-0 mt-6 ">
+              <p className='paragraph  md:w-full mx-auto'>
               {language ? (
-                  <i>ESPAÑOL Lorem ipsum dolor sit amet consectetur.</i>
+                  <i>Me encantaría escuchar de ti. Por favor, envía un correo electrónico a <strong> vargasrjmejias27@gmail.com </strong> o llena el formulario de contacto en mi sitio web para ponerte en contacto conmigo.</i>
                   ):(
-                  <i >ENGLISH Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+                  <i >I would love to hear from you. Please send an email to <strong> vargasrjmejias27@gmail.com </strong> or fill out the contact form on my website to get in touch with me.</i>
                 )}
               </p>
             </div>
@@ -84,8 +95,23 @@ function Contact({language}) {
 
         </motion.div>
 
-        <div className={`${sended ? 'hidden':''} bg-green-400 mx-[400px] p-2 rounded-sm text-second font-semibold`}>
-            Gracias por contactarte conmigo.
+        <div className={`${shownoty ? '':'hidden'} bg-green-400 mx-[220px] p-2 rounded-sm text-second font-semibold`}>
+            {language ? (
+              <p> Gracias por escribirme, te respondere tan pronto me sea posible. </p>
+            ): (
+              <p>Thank you for writing to me, I will answer you as soon as possible.</p>
+            )}
+        </div>
+        
+        <div className={`${showerror ? '':'hidden'} bg-red-400 mx-[220px] p-2 rounded-sm text-second font-semibold flex flex-row justify-between`}>
+            {language ? (
+              <p> Por favor rellena el formulario para poder estar en contacto. </p>
+            ): (
+              <p>Please fill out the form to be in contact.</p>
+            )}
+            <div className='flex items-center bg-red-500 p-1 rounded-sm hover:bg-red-600 cursor-pointer' onClick={()=>setShowerror(false)}>
+              <img src={close} alt="" />
+            </div>
         </div>
 
 

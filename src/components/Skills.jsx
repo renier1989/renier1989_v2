@@ -27,9 +27,9 @@ function Skills({language}) {
           <div className="w-full md:mt-0 mt-6 ">
             <p className='paragraph  md:max-w-[450px] max-w-md mx-auto'>
             {language ? (
-                <i >ESPAÑOL Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, tempore.</i>
+                <i >Estas son algunas de las tecnologías con las que he estado trabajando recientemente.</i>
                 ):(
-                <i >ENGLISH Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, deleniti modi.</i>
+                <i >These are some of the technologies I've been working with recently.</i>
               )}
             </p>
           </div>
