@@ -7,7 +7,7 @@ function SkillCard({title, yearsEs, yearsEn, stat, img, visible, current,languag
         </div>
         <div className="py-2">
             <div className="paragraph">
-            <p>{title}</p>
+            <p className="text-gradient font-extrabold">{title}</p>
             {/* <p>{language ? yearsEs : yearsEn}</p>
             <p>{stat} %</p> */}
             </div>

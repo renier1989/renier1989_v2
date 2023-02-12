@@ -74,12 +74,23 @@ function Portfolio({language}) {
                 <p className="mt-7">
                   {port.contentEs}
                 </p>
-                <span>
-                  iconos de tecnologias
-                </span>
-                <div>
-                  botones
+                <div className="flex flex-row space-x-3 p-4">
+                  <a href={port.code_link} target="_blank" className={`${port.code_link ? '':'hidden'} font-semibold text-white bg-fourth hover:bg-red-600 rounded-md py-1 px-1 transition duration-500`}>
+                    CODE
+                  </a>
+                  <a href={port.link} target="_blank" className={`${port.link ? '':'hidden'} font-semibold text-white bg-fourth hover:bg-red-600 rounded-md py-1 px-1 transition duration-500`}>
+                    DEMO
+                  </a>
                 </div>
+
+                <div className="w-[380px] grid grid-cols-4 justify-center items-center">
+                    {port.tech.map((t)=>(
+                      <div key={t.id} >
+                          {t.name}
+                      </div>
+                    ))}
+                </div>
+                
               </div>
               {/* Here goes the image of project */}
               <img src={port.img} alt={port.id}/>

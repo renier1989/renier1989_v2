@@ -46,12 +46,18 @@ function Home({language, setLanguage }) {
           )}
           </div>
           <p className="heading3">
-            Renier Vargas
+          {/* <p className='text-gradient py-2'> Renier Vargas</p> */}
+          Renier Vargas
           </p>
-          <p className='heading1 '>
-            {language ? homeInfo.shortPhraseEs : homeInfo.shortPhraseEn}
-          </p>
-
+          <div className='heading1 '>
+            {language ? 
+            (
+              <div className='flex flex-row'>Creando <p className='text-gradient2 pr-1 pl-1 '> soluciones </p> digitales e  innovadoras.</div>
+            ) : (
+              <div className='flex flex-row'>Creating innovative digital <p className='text-gradient2 pl-1'> solutions.</p></div>
+            )}
+            {/* {language ? homeInfo.shortPhraseEs : homeInfo.shortPhraseEn} */}
+          </div>
           <div className="text-sm font-medium paragraph md:mr-[300px]">
             {language ? homeInfo.shortInfoEs : homeInfo.shortInfoEn}
             <h1>
@@ -72,7 +78,7 @@ function Home({language, setLanguage }) {
           visible: { opacity: 1 , x: 0 }
         }}
         >
-          <a href="#contact" className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
+          <a href="#contact" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-500 rounded-md py-3 px-6  transition duration-500 '>
             {language ? homeInfo.buttonEs : homeInfo.buttonEn}
           </a>
 

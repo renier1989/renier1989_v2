@@ -88,14 +88,14 @@ function Contact({language}) {
               <input className="p-2 bg-gray-500 rounded-sm text-white" type="text" id='user_name' name='user_name' placeholder='Name'/>
               <input className="p-2 bg-gray-500 rounded-sm text-white my-4" type="email" id='user_email' name='user_email' placeholder='Email'/>
               <textarea className="p-2 bg-gray-500 rounded-sm text-white" id="message" name="message" rows="10" placeholder='Message'></textarea>
-              <button type='submit' className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 mx-40 justify-center my-8 flex items-center hover:bg-red-700 transition duration-500 '>
+              <button type='submit' className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-600 rounded-md py-3 px-6 md:mx-40 justify-center my-8 flex items-center  transition duration-500 '>
                 Let's Talk
               </button>
           </form>
 
         </motion.div>
 
-        <div className={`${shownoty ? '':'hidden'} bg-green-400 mx-[220px] p-2 rounded-sm text-second font-semibold`}>
+        <div className={`${shownoty ? '':'hidden'} bg-green-400 md:mx-[220px] p-2 rounded-sm text-second font-semibold`}>
             {language ? (
               <p> Gracias por escribirme, te respondere tan pronto me sea posible. </p>
             ): (
@@ -103,7 +103,7 @@ function Contact({language}) {
             )}
         </div>
         
-        <div className={`${showerror ? '':'hidden'} bg-red-400 mx-[220px] p-2 rounded-sm text-second font-semibold flex flex-row justify-between`}>
+        <div className={`${showerror ? '':'hidden'} bg-red-400 md:mx-[220px] p-2 rounded-sm text-second font-semibold flex flex-row justify-between`}>
             {language ? (
               <p> Por favor rellena el formulario para poder estar en contacto. </p>
             ): (

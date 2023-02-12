@@ -63,7 +63,7 @@ function About(props) {
           visible: { opacity: 1 , x: 0 }
         }}
         >
-          <a href="#contact" className='font-semibold text-white bg-fourth rounded-sm py-3 px-6 hover:bg-red-700 transition duration-500'>
+          <a href="#contact" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-600 rounded-md  py-3 px-6  transition duration-500'>
             {props.language ? aboutInfo.buttonEs : aboutInfo.buttonEn}
           </a>
 

@@ -13,7 +13,7 @@ function Header(props) {
         <ul className="list-none sm:flex hidden justify-center items-center flex-1  ">
           {/* hacemos el recorrido de cada uno de los links para el navbar */}
           {navLinks.map((nav, index)=> (
-            <li key={nav.id} className={` ${nav.visible ? '':'hidden'} font-poppins font-semibold cursor-pointer text-third text-[20px] ${index !== navLinks - 1 ? 'm-2' : ''} text-gray-700 darkText`}>
+            <li key={nav.id} className={` ${nav.visible ? '':'hidden'} font-poppins font-semibold cursor-pointer text-third text-[20px] ${index !== navLinks - 1 ? 'm-2' : ''} text-gray-700 darkText  hover:underline hover:underline-offset-4 hover:decoration-fourth`}>
               <a href={`#${nav.id} `} > { props.language ? nav.titleEs : nav.titleEn } </a>
             </li>
           ))}
@@ -24,17 +24,16 @@ function Header(props) {
           </div>
           <span className="mx-2">|</span>  */}
           <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
-            <div className={`bg-first  p-[4px] rounded-md font-semibold text-second`}>
-
+            <div className={`bg-first  p-[4px] rounded-md font-semibold text-second hover:bg-gray-300 hover:transition duration-700 `}>
                 {props.language ? (
                   <div className="flex flex-row">
                     EN 
-                    <img src={globe} alt="lang" className="pl-1" />
+                    <img src={globe} alt="lang" className="pl-1 " />
                   </div>
                 ) : (
                   <div className="flex flex-row">
                     ES 
-                    <img src={globe} alt="lang" className="pl-1"/>
+                    <img src={globe} alt="lang" className="pl-1 "/>
                   </div>
                 )}
 
@@ -60,15 +59,23 @@ function Header(props) {
                 <img src={props.darkMode ? sun : moon} alt="darkMode" className="dark:invert"/>
               </div> */}
               <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
-              <div className={`bg-gray-600  p-[4px] rounded-md font-semibold text-white dark:bg-gray-400 dark:text-gray-200 dark:transition dark:duration-500`}>
+              <div className="cursor-pointer" onClick={() => props.setLanguage((prev)=> !prev)}> 
+            <div className={`bg-first  p-[4px] rounded-md font-semibold text-second`}>
 
                 {props.language ? (
-                  <div>EN</div>
+                  <div className="flex flex-row">
+                    EN 
+                    <img src={globe} alt="lang" className="pl-1" />
+                  </div>
                 ) : (
-                  <div>ES</div>
+                  <div className="flex flex-row">
+                    ES 
+                    <img src={globe} alt="lang" className="pl-1"/>
+                  </div>
                 )}
 
-                </div>
+            </div>
+          </div>
               </div>
             </div>
           </ul>

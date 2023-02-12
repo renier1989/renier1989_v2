@@ -207,8 +207,16 @@ export const portfolio = [
         tech: [
             {
                 id:'tech-1',
-                img:'img-tech1'
-            }
+                name:'HTML'
+            },
+            {
+                id:'tech-2',
+                name:'NodeJs'
+            },
+            {
+                id:'tech-3',
+                name:'TailwindCss'
+            },
         ],
     },
     {
@@ -224,8 +232,20 @@ export const portfolio = [
         tech: [
             {
                 id:'tech-1',
-                img:'img-tech1'
-            }
+                name:'ReactJS',
+            },
+            {
+                id:'tech-2',
+                name:'NodeJs',
+            },
+            {
+                id:'tech-3',
+                name:'TailwindCss',
+            },
+            {
+                id:'tech-4',
+                name:'HTML',
+            },
         ],
     },
     {
@@ -241,8 +261,21 @@ export const portfolio = [
         tech: [
             {
                 id:'tech-1',
-                img:'img-tech1'
-            }
+                name:'ReactJS',
+            },
+            {
+                id:'tech-2',
+                name:'NodeJs',
+            },
+            {
+                id:'tech-3',
+                name:'TailwindCss',
+            },
+            {
+                id:'tech-4',
+                name:'HTML',
+            },
+            
         ],
     },
     {

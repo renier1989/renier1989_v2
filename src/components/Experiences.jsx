@@ -64,7 +64,7 @@ function Experiences({language}) {
               {experiences.map((exp, index)=>(
                 <button key={index} 
                     onClick={()=> setTab(exp.id)}
-                    className={`p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${tab === exp.id ? 'border-black bg-fourth' : ''} `}>
+                    className={`p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${tab === exp.id ? 'border-fourth  bg-gradient-to-r from-second  to-fourth ' : ''} `}>
                   {language ? exp.nameJobEs : exp.nameJobEn}
                 </button>
               ))}
