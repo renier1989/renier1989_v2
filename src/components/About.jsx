@@ -29,7 +29,7 @@ function About(props) {
       </div>
 
       {/* Here will go the Name and some information */}
-      <div className="flex-1 px-6 py-5 sm:px-16 flex-col flexCenter md:items-start md:text-start bg-gray-800 rounded-md">
+      <div className="flex-1 px-6 py-5 sm:px-14 flex-col flexCenter md:items-start md:text-start bg-gray-800 rounded-md">
         <motion.div 
         className="text-start"
           initial="hidden"
@@ -41,13 +41,63 @@ function About(props) {
             visible: { opacity: 1 , x: 0 }
           }}
         >
-          <p className="heading2 font-poppins">
-            Renier Vargas
-          </p>
 
-          <p className=" font-medium paragraph ">
-            {props.language ? aboutInfo.infoEs : aboutInfo.infoEn}
-          </p>
+          <div className=" font-medium paragraph2 my-4">
+            {props.language ? (
+              <div>
+                <div >
+                  Hola, mi nombre es <e className="font-bold text-gradient2 text-[19px]">Renier</e> y soy un programador web. Me apasiona crear <e className="font-bold text-gradient2 text-[18px]">soluciones</e> digitales que sean funcionales, eficientes y efectivas. Me motiva la idea de agilizar y mejorar la forma de trabajo de mis clientes y usuarios. 
+                  <br />
+                  <br />
+                  Mi interés por la programación comenzó cuando me di cuenta de que podía crear herramientas útiles y <e className="font-bold text-gradient2 text-[18px]"> accesibles </e> para mi equipo de estudios, por lo que empecé a aprender PHP y MySQL. Desde entonces, he continuado aprendiendo y perfeccionando mis habilidades para poder ofrecer soluciones cada vez más <e className="font-bold text-gradient2 text-[18px]"> sofisticadas </e> y completas a mis clientes. Mi objetivo es siempre crear aplicaciones web que cumplan con los más altos estándares de calidad y usabilidad.
+                </div>
+                <div className='my-7'>
+                  <p>Algunas de las tecnologias o herramientas con las que trabajo actualmente:</p>
+                  <div className='grid grid-cols-2 pl-5 my-3'>
+                      <ul className='list-disc'>
+                        <li>Laravel</li>
+                        <li>Livewire</li>
+                        <li>MySql</li>
+                        <li>BulmaCss</li>
+                      </ul>
+                      <ul className='list-disc'>
+                        <li>Node.Js</li>
+                        <li>PHP</li>
+                        <li>GitHub</li>
+                        <li>GitHub Pages</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+            ) : (
+              <div>
+                <p>
+                  Hi, my name is <e className="font-bold text-gradient2 text-[19px]">Renier</e>  and I'm a web developer. I'm passionate about creating digital <e className="font-bold text-gradient2 text-[18px]">solutions</e>  that are functional, efficient, and effective. I'm motivated by the idea of streamlining and improving the work processes of my clients and users. 
+                  <br />
+                  <br />
+                  My interest in programming began when I realized I could create useful and <e className="font-bold text-gradient2 text-[18px]">accessible</e>  tools for my study group, so I started learning PHP and MySQL. Since then, I've continued to learn and perfect my skills in order to provide increasingly <e className="font-bold text-gradient2 text-[18px]">sophisticated </e> and comprehensive solutions to my clients. My goal is always to create web applications that meet the highest standards of quality and usability.
+                </p>
+                <div className='my-7'>
+                  <p>Some of the technologies or tools I currently work with:</p>
+                  <div className='grid grid-cols-2 pl-5 my-3'>
+                      <ul className='list-disc'>
+                        <li>Laravel</li>
+                        <li>Livewire</li>
+                        <li>MySql</li>
+                        <li>BulmaCss</li>
+                      </ul>
+                      <ul className='list-disc'>
+                        <li>Node.Js</li>
+                        <li>PHP</li>
+                        <li>GitHub</li>
+                        <li>GitHub Pages</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
         </motion.div>
 
 

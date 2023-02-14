@@ -145,6 +145,10 @@ background: linear-gradient(23deg, rgba(255,255,255,1) 0%, rgba(254,89,0,1) 85%)
   @apply font-poppins font-normal text-third text-[18px] leading-[30.8px] darkText;
 }
 
+.paragraph2 {
+  @apply font-poppins font-normal text-third text-[15px] leading-[25.8px] darkText;
+}
+
 .flexCenter {
   @apply flex justify-center items-center text-center;
 }

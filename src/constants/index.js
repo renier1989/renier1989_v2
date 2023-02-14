@@ -81,8 +81,8 @@ export const aboutInfo =
         infoEs : `Cuento con más de 9 años de experiencia en el ámbito tecnológico centrados en el Desarrollo como Backend, Frontend, Base de datos, Administración y Gestión de versiones, haciendo uso de tecnologías como Php, Laravel Framework, Laravel Livewire, Javascript, AlpineJS, VueJs, Bootstrap, Bulma, TailwindCSS, MySQL, PostgresSQL, HTML, CSS, PHPMyAdmin, Git, GiyHub, GitLab, Bitbucket. <br> holas`,
 
         // text for button of contact
-        buttonEn : "Contact me!",
-        buttonEs : "Contactame!",
+        buttonEn : "Resume CV",
+        buttonEs : "Resumen CV",
 
 };
 
@@ -173,7 +173,7 @@ export const skills = [
     },
     {
         id: 'logo-7',
-        title: 'Liviwire',
+        title: 'Livewire',
         yearsEn: '2 Years',
         yearsEs: '2 Años',
         stat: '91',
