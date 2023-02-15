@@ -8,10 +8,11 @@ function Experiences({language}) {
 
   return (
     
-      <section id="experiences" className="py-10 md:py-20 text-first bg-second rounded-md">
-
+      <section id="experiences" className=" text-first rounded-md pt-48">
+        <div className="bg-second rounded-md py-20">
         {/* Here goes the Experiences Text and some info. */}
         <motion.div
+        className=""
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true , amount: 0.5 }}
@@ -21,15 +22,15 @@ function Experiences({language}) {
             visible: { opacity: 1 , y: 0 }
           }}
           >
-          <div className="flex-1 px-6 sm:px-16 flexCenter md:items-start md:text-start md:flex-row flex-col mb-5">
+          <div className="flex-1 px-6 sm:px-16 flexCenter md:items-start md:text-start md:flex-row flex-col mb-5 ">
             <h1 className="heading2">
               {language ? 
                 ( 
-                  <p>Donde he trabajado</p>
+                  <p>Experiencia laboral</p>
                   ) 
                   : 
                   (
-                  <p>Where I've Worked</p>
+                  <p>Work experience</p>
                 )
               }
             </h1>
@@ -47,7 +48,7 @@ function Experiences({language}) {
           </div>
         </motion.div>
 
-        <div className="md:grid md:grid-col-2 grid-flow-col p-4 md:p-8">
+        <div className="md:grid md:grid-col-2 grid-flow-col p-4 md:p-8 bg-second">
           {/* Here goes the tabs on de left side */}
           <motion.div
           className=""
@@ -103,6 +104,10 @@ function Experiences({language}) {
           </motion.div>
 
         </div>
+
+
+        </div>
+
       </section>
   )
 }

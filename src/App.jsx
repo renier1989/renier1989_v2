@@ -37,8 +37,8 @@ function App() {
         <div className="bg-first paddingX flexCenter darkMode">
           <div className="boxWidth">
             <Skills language={language} />
-            <Portfolio language={language} />
             <Experiences language={language} className="-z-10"/>
+            <Portfolio language={language} />
             {/* <Testimonials /> */}
             <Contact language={language}/>
           </div>

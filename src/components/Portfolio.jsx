@@ -6,7 +6,7 @@ import { portfolio } from '../constants'
 function Portfolio({language}) {
   return (
     <section id="portfolio" className="pt-48 pb-48 ">
-      <div className="py-2 px-2 bg-second rounded-md">
+      <div className="py-20 px-2 bg-second rounded-md">
       {/* Here goes part of the title SKILLS and some texte */}
       <motion.div
       initial="hidden"

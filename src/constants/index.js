@@ -36,17 +36,18 @@ export const navLinks = [
         visible:true,
     },
     {
-        id: 'portfolio',
-        titleEn: 'Portfolio',
-        titleEs: 'Portafolio',
-        visible:true,
-    },
-    {
         id: 'experiences',
         titleEn: 'Experiences',
         titleEs: 'Experiencia',
         visible:true,
     },
+    {
+        id: 'portfolio',
+        titleEn: 'Portfolio',
+        titleEs: 'Portafolio',
+        visible:true,
+    },
+
     {
         id: 'testimonials',
         titleEn: 'Testimonials',
@@ -63,11 +64,11 @@ export const navLinks = [
 
 export const homeInfo = {
         // information home
-        shortInfoEn : "I'm a Systems Engineer specializing in Fullstack web development with expertise in designing and building administrative systems and websites that meet specific client requirements.",
-        shortInfoEs : "Soy Ingeniero en Sistemas especializado en el desarrollo web Fullstack con experiencia en la creación de sistemas administrativos y sitios web adaptados a las necesidades específicas de los clientes.",
+        shortInfoEn : "I'm a Systems Engineer, specializing in Fullstack web development with expertise in designing and building administrative systems and websites that meet specific client requirements.",
+        shortInfoEs : "Soy Ingeniero en Sistemas, especializado en el desarrollo web Fullstack con experiencia en la creación de sistemas administrativos y sitios web adaptados a las necesidades específicas de los clientes.",
 
-        shortPhraseEn : "Creating innovative digital solutions.",
-        shortPhraseEs : "Creando soluciones digitales e innovadoras.",
+        shortPhraseEn : "Creator of innovative digital solutions.",
+        shortPhraseEs : "Creador de soluciones digitales e innovadoras.",
 
         // text for button of contact
         buttonEn : "Contact me!",

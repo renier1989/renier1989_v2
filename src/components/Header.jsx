@@ -15,7 +15,9 @@ function Header(props) {
   
   return (
     <nav  className="bg-second  fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkText z-50 " >
-      <img src={icon2w} alt="logo" className="w-[50px]"/>
+      <a href="#home">
+        <img src={icon2w} alt="logo" className="w-[50px]"/>
+      </a>
 
       {/* esto es para el navbar de la version de escritorio  */}
         <ul className="list-none sm:flex hidden justify-center items-center flex-1  ">
