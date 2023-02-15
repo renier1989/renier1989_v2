@@ -38,7 +38,7 @@ function App() {
           <div className="boxWidth">
             <Skills language={language} />
             <Portfolio language={language} />
-            <Experiences language={language}/>
+            <Experiences language={language} className="-z-10"/>
             {/* <Testimonials /> */}
             <Contact language={language}/>
           </div>

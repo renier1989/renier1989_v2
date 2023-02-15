@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
-import {close} from "../assets";
+import {close,logo2g} from "../assets";
 
 function Contact({language}) {
   const [shownoty, setShownoty] = useState(false);
@@ -40,6 +40,21 @@ function Contact({language}) {
 
   return (
     <section id="contact" className="pt-48 pb-48 ">
+      <div className=" z-0  md:order-2  justify-center  flexCenter  ">
+            <motion.div 
+              className="md:absolute hidden md:block"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true , amount: 0.5 }}
+              transition={{delay: 0.5, duration:0.5}}
+              variants={{
+                hidden: { opacity: 0 , x: 50 },
+                visible: { opacity: 1 , x: 0 }
+              }}
+            >
+              <img src={logo2g} alt="profile" className="z-0 md:max-w-[700px] md:relative -right-[790px] top-[560px] transition duration-500 " />
+            </motion.div>
+        </div>
       <div className='pb-10 pt-10 px-2 bg-second rounded-md'>
         {/* Here goes part of the title SKILLS and some texte */}
         <motion.div

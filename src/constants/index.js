@@ -354,9 +354,9 @@ export const experiences = [
         id: 'experience-3',
         nameJobEn: 'Garzon Hypermarket',
         nameJobEs: 'Garzon Hipermercado',
-        datesEn : 'Apr 2018 - Jul 2020',
-        datesEs : 'Abr 2020 - Jul 2020',
-        positionEn: 'Web Developer',
+        datesEn : 'Jun 2016 - Nov 2018',
+        datesEs : 'Jun 2026 - Nov 2018',
+        positionEn: 'Specialist Programmer',
         positionEs: 'Especialista Programador',
         roles: [
             {

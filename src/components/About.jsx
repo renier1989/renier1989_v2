@@ -1,9 +1,9 @@
 import {motion} from 'framer-motion'
-import {renier, renierbg, renier2 } from '../assets';
+import {renier, renierbg, renier2,cves, cven } from '../assets';
 import { aboutInfo } from '../constants';
 import SocialMediaIcons from './SocialMediaIcons';
 
-function About(props) {
+function About({language}) {
   return (
     <section id="about" className="flex md:flex-row flex-col md:py-56 py-20 ">
 
@@ -42,14 +42,14 @@ function About(props) {
           }}
         >
 
-          <div className=" font-medium paragraph2 my-4">
-            {props.language ? (
+          <div className=" font-medium paragraph2 my-4 text-justify">
+            {language ? (
               <div>
                 <div >
-                  Hola, mi nombre es <e className="font-bold text-gradient2 text-[19px]">Renier</e> y soy un programador web. Me apasiona crear <e className="font-bold text-gradient2 text-[18px]">soluciones</e> digitales que sean funcionales, eficientes y efectivas. Me motiva la idea de agilizar y mejorar la forma de trabajo de mis clientes y usuarios. 
+                  Hola, mi nombre es <a className="font-bold text-gradient2 text-[19px]">Renier</a> y soy un programador web. Me apasiona crear <a className="font-bold text-gradient2 text-[18px]">soluciones</a> digitales que sean funcionales, eficientes y efectivas. Me motiva la idea de agilizar y mejorar la forma de trabajo de mis clientes y usuarios. 
                   <br />
                   <br />
-                  Mi interés por la programación comenzó cuando me di cuenta de que podía crear herramientas útiles y <e className="font-bold text-gradient2 text-[18px]"> accesibles </e> para mi equipo de estudios, por lo que empecé a aprender PHP y MySQL. Desde entonces, he continuado aprendiendo y perfeccionando mis habilidades para poder ofrecer soluciones cada vez más <e className="font-bold text-gradient2 text-[18px]"> sofisticadas </e> y completas a mis clientes. Mi objetivo es siempre crear aplicaciones web que cumplan con los más altos estándares de calidad y usabilidad.
+                  Mi interés por la programación comenzó cuando me di cuenta de que podía crear herramientas útiles y <a className="font-bold text-gradient2 text-[18px]"> accesibles </a> para mi equipo de estudios, por lo que empecé a aprender PHP y MySQL. Desde entonces, he continuado aprendiendo y perfeccionando mis habilidades para poder ofrecer soluciones cada vez más <a className="font-bold text-gradient2 text-[18px]"> sofisticadas </a> y completas a mis clientes. Mi objetivo es siempre crear aplicaciones web que cumplan con los más altos estándares de calidad y usabilidad.
                 </div>
                 <div className='my-7'>
                   <p>Algunas de las tecnologias o herramientas con las que trabajo actualmente:</p>
@@ -73,10 +73,10 @@ function About(props) {
             ) : (
               <div>
                 <p>
-                  Hi, my name is <e className="font-bold text-gradient2 text-[19px]">Renier</e>  and I'm a web developer. I'm passionate about creating digital <e className="font-bold text-gradient2 text-[18px]">solutions</e>  that are functional, efficient, and effective. I'm motivated by the idea of streamlining and improving the work processes of my clients and users. 
+                  Hi, my name is <a className="font-bold text-gradient2 text-[19px]">Renier</a>  and I'm a web developer. I'm passionate about creating digital <a className="font-bold text-gradient2 text-[18px]">solutions</a>  that are functional, efficient, and effective. I'm motivated by the idea of streamlining and improving the work processes of my clients and users. 
                   <br />
                   <br />
-                  My interest in programming began when I realized I could create useful and <e className="font-bold text-gradient2 text-[18px]">accessible</e>  tools for my study group, so I started learning PHP and MySQL. Since then, I've continued to learn and perfect my skills in order to provide increasingly <e className="font-bold text-gradient2 text-[18px]">sophisticated </e> and comprehensive solutions to my clients. My goal is always to create web applications that meet the highest standards of quality and usability.
+                  My interest in programming began when I realized I could create useful and <a className="font-bold text-gradient2 text-[18px]">accessible</a>  tools for my study group, so I started learning PHP and MySQL. Since then, I've continued to learn and perfect my skills in order to provide increasingly <a className="font-bold text-gradient2 text-[18px]">sophisticated </a> and comprehensive solutions to my clients. My goal is always to create web applications that meet the highest standards of quality and usability.
                 </p>
                 <div className='my-7'>
                   <p>Some of the technologies or tools I currently work with:</p>
@@ -113,9 +113,12 @@ function About(props) {
           visible: { opacity: 1 , x: 0 }
         }}
         >
-          <a href="#contact" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-600 rounded-md  py-3 px-6  transition duration-500'>
-            {props.language ? aboutInfo.buttonEs : aboutInfo.buttonEn}
+          <div className="my-1">
+          <a href={language ? cves : cven} target="_blank" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-600 rounded-md  py-3 px-6  transition duration-500'>
+            {language ? aboutInfo.buttonEs : aboutInfo.buttonEn}
           </a>
+          </div>
+      
 
         </motion.div>
 

@@ -52,9 +52,9 @@ function Home({language, setLanguage }) {
           <div className='heading1 '>
             {language ? 
             (
-              <div className='flex flex-row'>Creando <p className='text-gradient2 pr-1 pl-1 '> soluciones </p> digitales e  innovadoras.</div>
+              <div className=''>Creando <a className='text-gradient2 pr-1 pl-1 '> soluciones </a> digitales e  innovadoras.</div>
             ) : (
-              <div className='flex flex-row'>Creating innovative digital <p className='text-gradient2 pl-1'> solutions.</p></div>
+              <div className=''>Creating innovative digital <a className='text-gradient2'> solutions.</a></div>
             )}
             {/* {language ? homeInfo.shortPhraseEs : homeInfo.shortPhraseEn} */}
           </div>

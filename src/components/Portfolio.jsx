@@ -67,7 +67,7 @@ function Portfolio({language}) {
               }}
             >
               {/* Here goes the overlay with the information of project when hovered */}
-              <div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-gray-500 z-30 flex flex-col justify-center items-center text-center p-16 text-white'>
+              <div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-gray-500 z-30 flex flex-col justify-center items-center text-center p-2 text-white'>
                 <p className="text-2xl ">
                   {port.titleEs}
                 </p>
@@ -83,7 +83,7 @@ function Portfolio({language}) {
                   </a>
                 </div>
 
-                <div className="w-[380px] grid grid-cols-4 justify-center items-center">
+                <div className="md:w-[380px] grid md:grid-cols-4 grid-cols-2 justify-center items-center">
                     {port.tech.map((t)=>(
                       <div key={t.id} >
                           {t.name}

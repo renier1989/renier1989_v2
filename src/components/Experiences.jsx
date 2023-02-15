@@ -33,7 +33,7 @@ function Experiences({language}) {
                 )
               }
             </h1>
-            <div className="w-full md:mt-0 mt-6 ">
+            {/* <div className="w-full md:mt-0 mt-6 ">
               {language ? 
                 (
                   <p className="paragraph  md:max-w-[450px] max-w-md mx-auto">Español Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis assumenda blanditiis quae quod?</p>
@@ -43,7 +43,7 @@ function Experiences({language}) {
                   <p className="paragraph  md:max-w-[450px] max-w-md mx-auto">English Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, adipisci aperiam!</p>
                 )
               }
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
